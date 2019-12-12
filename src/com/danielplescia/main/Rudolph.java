@@ -29,10 +29,18 @@ public class Rudolph {
         System.out.println(dayTwo.getCodeTwo());
 
         // Get answer for day 3, answer 1
-        System.out.println("/--------- DAY 3, ANSWER 1 ----------/");
-        System.out.println(dayThree.getDistance());
+//        System.out.println("/--------- DAY 3, ANSWER 1 ----------/");
+//        System.out.println(dayThree.getDistance());
         // Get answer for day 3, answer 2
 //        System.out.println("/--------- DAY 3, ANSWER 2 ----------/");
-//        System.out.println(dayTwo.getCodeTwo());
+//        System.out.println(dayThree.getLeastSteps());
+
+        // Get answer for day 4, answer 1
+        System.out.println("/--------- DAY 4, ANSWER 1 ----------/");
+        System.out.println(dayTwo.getCode());
+        // Get answer for day 4, answer 2
+        System.out.println("/--------- DAY 4, ANSWER 2 ----------/");
+        System.out.println(dayTwo.getCodeTwo());
+
     }
 }
