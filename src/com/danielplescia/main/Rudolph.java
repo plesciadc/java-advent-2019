@@ -40,8 +40,8 @@ public class Rudolph {
         System.out.println("/--------- DAY 4, ANSWER 1 ----------/");
         System.out.println(dayFour.getTotalPasswords());
         // Get answer for day 4, answer 2
-//        System.out.println("/--------- DAY 4, ANSWER 2 ----------/");
-//        System.out.println(dayTwo.getCodeTwo());
+        System.out.println("/--------- DAY 4, ANSWER 2 ----------/");
+        System.out.println(dayFour.getTotalPasswordsStrict());
 
     }
 }
