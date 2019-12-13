@@ -1,8 +1,9 @@
 package com.danielplescia.main;
 
 import com.danielplescia.projects.dayone.DayOneLogic;
-import com.danielplescia.projects.daythree.DayThreeLogic;
 import com.danielplescia.projects.daytwo.DayTwoLogic;
+import com.danielplescia.projects.daythree.DayThreeLogic;
+import com.danielplescia.projects.dayfour.DayFourLogic;
 
 import java.io.IOException;
 
@@ -11,6 +12,7 @@ public class Rudolph {
     static DayOneLogic dayOne = new DayOneLogic();
     static DayTwoLogic dayTwo = new DayTwoLogic();
     static DayThreeLogic dayThree = new DayThreeLogic();
+    static DayFourLogic dayFour = new DayFourLogic();
 
     public static void main(String[] args) throws IOException {
 	    // Get answer for day 1, answer 1
@@ -37,10 +39,10 @@ public class Rudolph {
 
         // Get answer for day 4, answer 1
         System.out.println("/--------- DAY 4, ANSWER 1 ----------/");
-        System.out.println(dayTwo.getCode());
+        System.out.println(dayFour.getTotalPasswords());
         // Get answer for day 4, answer 2
-        System.out.println("/--------- DAY 4, ANSWER 2 ----------/");
-        System.out.println(dayTwo.getCodeTwo());
+//        System.out.println("/--------- DAY 4, ANSWER 2 ----------/");
+//        System.out.println(dayTwo.getCodeTwo());
 
     }
 }
