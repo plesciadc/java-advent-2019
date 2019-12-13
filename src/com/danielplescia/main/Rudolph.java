@@ -17,8 +17,7 @@ public class Rudolph {
     public static void main(String[] args) throws IOException {
 	    // Get answer for day 1, answer 1
         System.out.println("/--------- DAY 1, ANSWER 1 ----------/");
-        int dayOneAnswerOne = dayOne.getFuelRequirements();
-        System.out.println(dayOneAnswerOne);
+        System.out.println(dayOne.getFuelRequirements());
         // Get answer for day 1, answer 2
         System.out.println("/--------- DAY 1, ANSWER 2 ----------/");
         System.out.println(dayOne.getRecursiveFuelRequirements());
