@@ -1,5 +1,6 @@
 package com.danielplescia.main;
 
+import com.danielplescia.projects.dayEight.DayEightLogic;
 import com.danielplescia.projects.dayone.DayOneLogic;
 import com.danielplescia.projects.daytwo.DayTwoLogic;
 import com.danielplescia.projects.daythree.DayThreeLogic;
@@ -15,6 +16,7 @@ public class Rudolph {
     static DayThreeLogic dayThree = new DayThreeLogic();
     static DayFourLogic dayFour = new DayFourLogic();
     static DaySixLogic daySix = new DaySixLogic();
+    static DayEightLogic dayEight = new DayEightLogic();
 
     public static void main(String[] args) throws IOException {
 	    // Get answer for day 1, answer 1
@@ -51,6 +53,13 @@ public class Rudolph {
         // Get answer for day 6, answer 2
         System.out.println("/--------- DAY 6, ANSWER 2 ----------/");
         System.out.println(daySix.getYouToSan());
+
+        // Get answer for day 8, answer 1
+        System.out.println("/--------- DAY 8, ANSWER 1 ----------/");
+        System.out.println(dayEight.getImageData());
+        // Get answer for day 8, answer 2
+//        System.out.println("/--------- DAY 8, ANSWER 2 ----------/");
+//        System.out.println(daySix.getYouToSan());
 
     }
 }
