@@ -66,4 +66,48 @@ public class DayEightLogic {
         return finalImageNumber;
     }
 
+    public String getImagePrinted() throws IOException {
+        String finalImage = "";
+
+        String imageData = fileReader.getFile("dayEight.txt").get(0); // Get the first line, since there is only one
+
+        ArrayList<String> imageLayers = new ArrayList<>();
+        ArrayList<Integer> imageLayerZeros = new ArrayList<>();
+
+        for (int i=0; i < imageData.length(); i+=150) {
+            imageLayers.add(imageData.substring(i, i+150));
+        }
+
+        ArrayList<Character> finalImageLayers = new ArrayList<>();
+
+        // Initialize the finalImageLayers
+        for (int i=0; i < imageLayers.get(0).length(); i++) {
+            finalImageLayers.add('2');
+        }
+
+        for (String layer : imageLayers) {
+            // Loop through string to find char
+            for (int i=0; i < layer.length(); i++) {
+                if (finalImageLayers.get(i) == '2') {
+                    // If the pixel has not been written or is 2
+                    if (layer.charAt(i) == '0') {
+                        finalImageLayers.set(i, ' ');
+                    } else if (layer.charAt(i) == '1') {
+                        finalImageLayers.set(i, '#');
+                    }
+                }
+            }
+        }
+
+        int lineSize = 25;
+        for (int i=0; i < finalImageLayers.size(); i+=lineSize) {
+            for (int lineChar = 0; lineChar < lineSize; lineChar++) {
+                finalImage += finalImageLayers.get(i + lineChar);
+            }
+            finalImage += "\n";
+        }
+
+        return finalImage;
+    }
+
 }

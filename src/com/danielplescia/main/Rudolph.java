@@ -55,11 +55,11 @@ public class Rudolph {
         System.out.println(daySix.getYouToSan());
 
         // Get answer for day 8, answer 1
-        System.out.println("/--------- DAY 8, ANSWER 1 ----------/");
-        System.out.println(dayEight.getImageData());
+//        System.out.println("/--------- DAY 8, ANSWER 1 ----------/");
+//        System.out.println(dayEight.getImageData());
         // Get answer for day 8, answer 2
-//        System.out.println("/--------- DAY 8, ANSWER 2 ----------/");
-//        System.out.println(daySix.getYouToSan());
+        System.out.println("/--------- DAY 8, ANSWER 2 ----------/");
+        System.out.println(dayEight.getImagePrinted());
 
     }
 }
